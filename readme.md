@@ -62,7 +62,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
+<img src="images/breakdownSchets/breakdown-schets.jpg" width="375px" alt="Breakdown schets van de homepagina van Rolex">
 
 
 
