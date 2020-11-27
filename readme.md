@@ -42,7 +42,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="voortgang-w1/screenshots/w1-voortgang-4.png">
+
+<img src="voortgang-w1/screenshots/w1-voortgang-5.png">
+
+<img src="voortgang-w1/screenshots/w1-voortgang-3.png">
+
+<img src="voortgang-w1/screenshots/w1-voortgang-2.png">
+
+<img src="voortgang-w1/screenshots/w1-voortgang-1.png">
 
 ### Agenda voor meeting
 
