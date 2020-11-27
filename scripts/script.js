@@ -1,9 +1,10 @@
 // JavaScript Document
-var menuButton = document.querySelector(".nav-menu");
+var hamburgerMenu = document.querySelector(".hamburger");
 
-menuButton.addEventListener('click', menuSlide); 
+hamburgerMenu.addEventListener("click", menuSlide); 
 
 function menuSlide(){
-    let hetMenu = document.querySelector(".toggle"); 
-    hetMenu.classList.toggle(".toonMenu");
+    let menuVerstop = document.querySelector(".menu-hidden"); 
+
+    menuVerstop.classList.toggle("menu-show"); 
 }

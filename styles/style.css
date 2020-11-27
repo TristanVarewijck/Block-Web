@@ -47,12 +47,14 @@ background-position: center;
 height: 100vh;
 }
 
-.toggle{
+/* slider menu / inspiratie bron: https://codepen.io/shooft/pen/PoNQwXY */ 
+
+.menu-hidden{
     background-color:rgba(179,179,179,.95);
     
     /* jouw code hier */
     position:absolute;
-    width:calc(100%);
+    width:100%;
     left:0;
     top:0; bottom:0;
     transform:translateX(-100%);
@@ -60,10 +62,11 @@ height: 100vh;
 
 }
 
-.toonMenu {
+.menu-show {
 	/* jouw code hier */
-	transform:translateX(100%);
+  transform:translateX(0%);
 }
+
 
 /* nav-bar */ 
 
@@ -87,10 +90,6 @@ nav a{
   font-size: 1.5em; 
   font-weight: 600;
   color: white;
-}
-
-.nav-menu{
-  cursor: pointer;
 }
 
 /* header - text */ 

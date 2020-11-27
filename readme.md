@@ -38,7 +38,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+<p> Wat ik vooral lastig vond is nog steeds het centreren van elementen. Ik wist het soms op te lossen met: transform:translate. Ook het bepalen van de hoogtes van mijn secties snapte ik niet zo goed dit heb ik uiteindelijk opgelost met vw en vh. 
+
+overal: Ik vind coderen best lastig maar weet het eindelijk na veel onderzoeken op te lossen. Ik ben nu bezig met een uitklap menu. En nog het centreren van tekst op bepalen delen van mijn pagina. 
+
 
 **Screenshot(s):**
 
@@ -79,7 +82,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je startniveau:** - rood -
 
-**Je focus:** - responsive -    
+**Je focus:** - Surface Plan -    
 
 **Je opdracht:** - Ik wil de website van Rolex namaken. URL's: https: https://www.rolex.com/ (homescreen) - 
 https://www.rolex.com/watches/datejust.html (detail-pagina) - 
