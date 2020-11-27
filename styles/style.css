@@ -3,3 +3,427 @@
   box-sizing:border-box;  
 }
 
+*{
+  margin:0; 
+  padding:0; 
+}
+
+ html{
+ color: #333;
+ font-family: Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: 'goldman', 'cursive'; 
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* nav-bar */
+
+nav{
+  z-index: 99;
+  color: white; 
+  width: 100vw;
+}
+
+/* header */ 
+
+header {
+position: relative;
+/* achtergrond foto van de header met overlay */ 
+background-image: linear-gradient(
+  rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url(../images/elementen/header-foto.jpg);
+
+/* foto bedekt de hele oppervlakt in het midden gecentreerd van 
+100% van de viewheight. */ 
+background-size: cover; 
+background-position: center;
+height: 100vh;
+}
+
+.toggle{
+    background-color:rgba(179,179,179,.95);
+    
+    /* jouw code hier */
+    position:absolute;
+    width:calc(100%);
+    left:0;
+    top:0; bottom:0;
+    transform:translateX(-100%);
+    transition:.5s;
+
+}
+
+.toonMenu {
+	/* jouw code hier */
+	transform:translateX(100%);
+}
+
+/* nav-bar */ 
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  border: 2em solid rgba(0, 0, 0, 0); 
+  list-style-type: none;
+}
+
+nav img{
+  display: flex;
+  line-height: .5em;
+  width: 4em; 
+  height: auto;
+  align-self: center;
+}
+
+nav a{
+  line-height: .5em;
+  font-size: 1.5em; 
+  font-weight: 600;
+  color: white;
+}
+
+.nav-menu{
+  cursor: pointer;
+}
+
+/* header - text */ 
+
+.inhetmidden{
+position: absolute; 
+color: white;
+left: 50%; top: 50%; 
+transform:translate(-50%, -50%); 
+text-align: center;
+width: 80vw;
+font-family: 'Goldman', cursive;
+}
+
+.inhetmidden h1{
+  letter-spacing: .1em;
+  font-size: 2.2em;
+  font-weight: 400; 
+}
+
+.inhetmidden h3{
+ margin-top: .5em;
+ font-size: 1em;
+ letter-spacing: .1em;
+ font-weight: 400;
+ color: #f0f0f0; 
+}
+
+.pijltje {
+  position: absolute;
+  font-size: 2em;
+  left: 50%; top: 300%; 
+   transform:translate(-50%, -50%);
+}
+
+/* section class .crafted-watches */ 
+
+
+.crafted-watches {
+  padding: 4em 1.5em 4em 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgb(247, 247, 247);
+}
+
+.crafted-watches h2 {
+font-family: 'goldman', cursive;
+font-weight: 400;
+letter-spacing: .1em;
+font-size: 1.7em;
+line-height: 1.3em;
+background: -webkit-linear-gradient( right, #eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.crafted-watches p {
+  letter-spacing: .1em;
+  font-size: 16px;
+  line-height: 1.7em;
+  font-weight: 100;
+  margin-top: 1em;
+  margin-bottom: 2.2em;
+  
+  }
+
+.watch.buttons{
+  display: flex;
+  margin-top: 1em; 
+}
+
+.button-noborder,  .button-border{
+  color: #6CA485; 
+  text-decoration: none;
+  transition-duration: 0.2s;
+
+}
+.button-noborder:hover{
+  opacity: .5;
+}
+
+.button-border{
+margin-right: 1em;
+background-color: rgba(0, 0, 0, 0); 
+padding: .7em 3em .7em 3em;
+border-radius: 20px;
+border: solid 1px #12784A;
+transition-duration: 0.2s;
+
+}
+
+.button-border:hover{
+  background-color: #12784A;
+  color: white;
+  
+} 
+
+/* sliderrr */ 
+
+.titel-link{
+  display: flex;
+  padding: 4em 1.5em 0 1.5em; 
+}
+
+.view-all{
+  margin-left: 3px;
+  transition-duration: 0.2s;
+}
+
+.view-all:hover{
+  opacity: .5;
+}
+
+.view-all a{
+ color: #6CA485;
+
+}
+
+.slider{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 4em 1.5em 4em 1.5em;
+}
+
+.slider figcaption{
+  color: #333;
+  margin-top: 1em;
+  
+}
+
+
+.figureTitel{
+ font-family: 'goldman', 'cursive';
+ font-weight: 700;
+ margin-bottom: 1em; 
+}
+
+.figureMore{
+font-weight: 600;
+font-size: .8em;
+}
+
+.slider img{
+ width: 100%; 
+ border-radius: 2px;
+}
+
+
+/* building a rolex */
+.building {
+  position: relative;
+  /* achtergrond foto van de header met overlay */ 
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/elementen/building-rolex.jpg);
+
+  
+  
+  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
+  100% van de viewheight. */ 
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+
+
+  }
+
+  .building h2{
+    position: absolute; 
+    color: white;
+    left: 50%; top: 50%; 
+    transform:translate(-50%, -50%); 
+    
+    width: 80vw;
+    font-family: 'Goldman', cursive;
+    font-weight: 100;
+    }
+/* discovering Rolex */ 
+
+.discovering-rolex{
+  color: #333;
+  padding: 4em 1.5em 0 1.5em;
+}
+
+.naast-elkaar{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 4em 1.5em 1em 1.5em;
+} 
+
+.naast-elkaar img{
+  width: 43vw;
+  height: 65vw;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: .2em; 
+}
+
+.eronder{
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5em 4em 1.5em;
+  object-fit: cover;
+}
+
+.eronder img{
+  width: 100%; 
+  height: 65vw; 
+}
+
+/* text discovering */ 
+
+.naast-elkaar p{
+  font-size: 1em;
+  line-height: 1.2em;
+  max-width: 40vw;
+}
+
+.naast-elkaar .eronder,  a{
+  color: #333
+}
+
+.naast-elkaar .eronder ,.figureText{
+  font-size: .7em;
+}
+
+/* official rolex retailers */ 
+
+.retailers {
+  position: relative;
+  /* achtergrond foto van de header met overlay */ 
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/elementen/buy-rolex-achtergrond.webp);
+  
+  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
+  100% van de viewheight. */ 
+  background-size: cover; 
+  
+  background-position: center;
+  height: 70vh;
+  }
+
+.inhetmidden-3{
+    position: absolute; 
+    color: white;
+    left: 50%; top: 50%; 
+    transform:translate(-50%, -50%); 
+    text-align: center;
+    width: 80vw;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+.retailers a {
+  margin-top: 10em;
+  background-color: rgba(0, 0, 0, 0); 
+  padding: .7em 3em .7em 3em;
+  border-radius: 20px;
+  border: solid 1px white;
+  color: white;
+  position: relative;
+  
+}
+
+
+
+
+/* social links */ 
+
+.social-links{
+background-color:#F7F7F7;
+padding: 4em 1.5em 4em 1.5em;
+}
+
+.social-links-list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0 2em 0 2em;
+}
+
+.social-links-list li{
+  border-radius: 100%;
+  padding: 1em;
+  background-color: white;
+
+
+}
+.social-links-list a{
+  font-size: 1em;
+  color: #12784A;
+
+ 
+}
+.titel-social {
+ font-size: 1em; 
+ text-align: center;
+ margin-bottom: 1.5em;
+ font-weight: 400;
+}
+
+footer {
+  color: #d4d4d4;
+  background-color: rgb(34,34,34);
+  padding: 4em 1.5em 4em 1.5em;
+}
+
+footer a{
+  color: #d4d4d4;
+  line-height: 1.8em;
+  font-size: .8em;
+}
+  
+/* footer hr {
+  margin-bottom: 1em;
+  width: 100vw; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
