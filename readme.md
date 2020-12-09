@@ -31,16 +31,35 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 2 (week 5)
 
 -same as voortgang 1-
+### Stand van zaken
+<p> Wat beter ging als vorige keer is het centreren van items daar liep ik vorige week erg tegenaan, het lukte niet helemaal. Nu heb ik dat wel onder controle. Wat ik deze weken vooral lastig vond/vind is het opletten op div's en classes en dat ik daar niet te veel van gebruik. Ben zelf namelijk gewent om het gewoon te gebruiken en nu moet je daar toch opletten en er andere oplossingen voor zoeken. Voor de volgende voortgang wil me gaan focussen op de responsiveness en animaties ook wil de website nog polijsten kleine dingen verbeteren waar ik me aan irriteer als laaste hoopte ik nog iets te doen met Javascript. </p>
 
 
+**Screenshot(s):**
+
+<img src="voortgang-w2/Voortgang-2.1.png">
+
+<img src="voortgang-w2/Voortgang-2.2.png">
+
+<img src="voortgang-w2/Voortgang-2.3.png">
+
+<img src="voortgang-w2/Voortgang-2.4.png">
+
+<img src="voortgang-w2/Voortgang-2.5.png">
+
+<img src="voortgang-w2/Voortgang-2.6.png">
+
+<img src="voortgang-w2/Voortgang-2.7.png">
+
+<img src="voortgang-w2/Voortgang-2.8.png">
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
 
 <p> Wat ik vooral lastig vond is nog steeds het centreren van elementen. Ik wist het soms op te lossen met: transform:translate. Ook het bepalen van de hoogtes van mijn secties snapte ik niet zo goed dit heb ik uiteindelijk opgelost met vw en vh. 
-
-overal: Ik vind coderen best lastig maar weet het eindelijk na veel onderzoeken op te lossen. Ik ben nu bezig met een uitklap menu. En nog het centreren van tekst op bepalen delen van mijn pagina. 
+<br>
+overal: Ik vind coderen best lastig maar weet het eindelijk na veel onderzoeken op te lossen. Ik ben nu bezig met een uitklap menu. En nog het centreren van tekst op bepalen delen van mijn pagina. </p>
 
 
 **Screenshot(s):**

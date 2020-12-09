@@ -9,18 +9,52 @@
 }
 
  html{
+ background-color: white; 
  color: #333;
  font-family: Helvetica, sans-serif;
 }
+
+.dark-mode{
+background: #191919;
+color: white; 
+
+}
+
+.dark-mode a {
+  color: white;
+}
+
+.dark-mode p{
+  color: white;
+
+}
+
+.dark-mode section:last-of-type{
+  background-color: #191919;
+}
+
+.dark-mode section:first-of-type{
+  background-color: #191919;
+}
+
+h4{
+  padding: 4em 1.5em 0 1.5em;
+  font-weight: 400;
+
+}
+
 
 h2 {
   font-family: 'goldman', 'cursive'; 
 }
 
+
+
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 
 
 /* nav-bar */
@@ -34,7 +68,6 @@ nav{
 /* header */ 
 
 header {
-position: relative;
 /* achtergrond foto van de header met overlay */ 
 background-image: linear-gradient(
   rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -43,28 +76,124 @@ background-image: linear-gradient(
 /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
 100% van de viewheight. */ 
 background-size: cover; 
+background-attachment: fixed;
 background-position: center;
 height: 100vh;
+
 }
 
-/* slider menu / inspiratie bron: https://codepen.io/shooft/pen/PoNQwXY */ 
 
+
+
+
+/* slider menu / inspiratie bron: https://codepen.io/shooft/pen/PoNQwXY \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+*/ 
 .menu-hidden{
-    background-color:rgba(179,179,179,.95);
-    
-    /* jouw code hier */
+    background-color: #222222;
+    z-index: 99;
     position:absolute;
     width:100%;
     left:0;
     top:0; bottom:0;
     transform:translateX(-100%);
-    transition:.5s;
+    transition:1s;
+}
 
+.menu-sluiten{
+  margin: 1em;  
+  color: white; 
+  font-size: 2em;
 }
 
 .menu-show {
-	/* jouw code hier */
+  position: fixed;
   transform:translateX(0%);
+  overflow-y: scroll;
+}
+
+/* slider in het menu */ 
+
+.slider-menu{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  list-style: none;
+  padding: 2em 1.5em 1em 1.5em;
+  margin-bottom: 1em
+  
+}
+.slider-menu::-webkit-scrollbar {
+  height: .3em 
+}
+
+.slider-menu::-webkit-scrollbar-track {
+  background-color: #4E4E4E;
+}
+
+.slider-menu::-webkit-scrollbar-thumb {
+  background-color: white; 
+}
+
+.slider-menu li{
+  margin-right: 1em; 
+}
+
+
+.slider-menu p{
+  color: white;
+  margin-top: 1em; 
+  font-weight: 600;
+  font-family: "goldman", "cursive";
+}
+
+.slider-menu img{
+ width: 10em;
+ border-radius: 2px;
+ opacity: 0.8;
+ transition: .2s;
+}
+
+.slider-menu img:hover{
+  opacity: 1;
+}
+
+/* footer in menu */ 
+.menu-tekst {
+  background-color: rgb(34,34,34);
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+.menu-tekst a{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5em;
+  font-size: .9em;
+}
+
+.menu-tekst hr{
+  margin-top: 1em;
+}
+
+.fixed-element{
+  position: sticky; 
+  bottom: 0; 
+  background-color: #222222;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+.fixed-element a{
+  color: white; 
+  font-size: .8em;
 }
 
 
@@ -100,13 +229,13 @@ color: white;
 left: 50%; top: 50%; 
 transform:translate(-50%, -50%); 
 text-align: center;
-width: 80vw;
+width: 23em;
 font-family: 'Goldman', cursive;
 }
 
 .inhetmidden h1{
   letter-spacing: .1em;
-  font-size: 2.2em;
+  font-size: 1.9em;
   font-weight: 400; 
 }
 
@@ -118,17 +247,10 @@ font-family: 'Goldman', cursive;
  color: #f0f0f0; 
 }
 
-.pijltje {
-  position: absolute;
-  font-size: 2em;
-  left: 50%; top: 300%; 
-   transform:translate(-50%, -50%);
-}
-
 /* section class .crafted-watches */ 
 
 
-.crafted-watches {
+section:first-of-type {
   padding: 4em 1.5em 4em 1.5em;
   display: flex;
   flex-wrap: wrap;
@@ -136,7 +258,7 @@ font-family: 'Goldman', cursive;
   background-color: rgb(247, 247, 247);
 }
 
-.crafted-watches h2 {
+section:first-of-type h2 {
 font-family: 'goldman', cursive;
 font-weight: 400;
 letter-spacing: .1em;
@@ -145,11 +267,12 @@ line-height: 1.3em;
 background: -webkit-linear-gradient( right, #eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
-.crafted-watches p {
+section:first-of-type p {
   letter-spacing: .1em;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.7em;
   font-weight: 100;
   margin-top: 1em;
@@ -162,10 +285,11 @@ background: -webkit-linear-gradient( right, #eee, #333);
   margin-top: 1em; 
 }
 
-.button-noborder,  .button-border{
-  color: #6CA485; 
+.watch-buttons a{ 
   text-decoration: none;
   transition-duration: 0.2s;
+  color: #12784A;
+
 
 }
 .button-noborder:hover{
@@ -175,7 +299,7 @@ background: -webkit-linear-gradient( right, #eee, #333);
 .button-border{
 margin-right: 1em;
 background-color: rgba(0, 0, 0, 0); 
-padding: .7em 3em .7em 3em;
+padding: .7em 2em .7em 2em;
 border-radius: 20px;
 border: solid 1px #12784A;
 transition-duration: 0.2s;
@@ -190,12 +314,8 @@ transition-duration: 0.2s;
 
 /* sliderrr */ 
 
-.titel-link{
-  display: flex;
-  padding: 4em 1.5em 0 1.5em; 
-}
-
 .view-all{
+  display: inline;
   margin-left: 3px;
   transition-duration: 0.2s;
 }
@@ -204,29 +324,50 @@ transition-duration: 0.2s;
   opacity: .5;
 }
 
-.view-all a{
- color: #6CA485;
+.view-all{
+ color: #12784A;
 
 }
 
 .slider{
   display: flex;
-  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
   list-style: none;
-  padding: 4em 1.5em 4em 1.5em;
-}
-
-.slider figcaption{
-  color: #333;
-  margin-top: 1em;
+  padding: 4em 1.5em 2em 1.5em;
+  margin-bottom: 2em;
   
 }
 
+/* Bron van de webkits om de scrollbar te stylen 
+ https://css-tricks.com/almanac/properties/s/scrollbar/ */ 
+.slider::-webkit-scrollbar {
+  height: .3em;  
+}
+
+.slider::-webkit-scrollbar-track {
+  background-color: #D3D3D3;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background-color: #12784A;
+}
+
+.slider li{
+  margin-right: 1em;
+ 
+}
+
+
+.slider figcaption{
+  color: #333;
+  margin-top: 1em; 
+}
 
 .figureTitel{
  font-family: 'goldman', 'cursive';
  font-weight: 700;
- margin-bottom: 1em; 
+ margin-bottom: 0.5em; 
 }
 
 .figureMore{
@@ -235,93 +376,36 @@ font-size: .8em;
 }
 
 .slider img{
- width: 100%; 
+ width: 20em;
  border-radius: 2px;
+
+}
+
+.discovering{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto; 
+  grid-gap: 10px;
+  row-gap: 2em;
+  padding: 2em 1.5em 4em 1.5em;
+}
+
+.discovering figure:last-of-type{
+  grid-column-start: 1; 
+  grid-column-end: 3;
+}
+
+.discovering img{
+  width: 100%;
+height: 17em;
+object-fit: cover;
 }
 
 
-/* building a rolex */
-.building {
-  position: relative;
-  /* achtergrond foto van de header met overlay */ 
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/elementen/building-rolex.jpg);
-
-  
-  
-  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
-  100% van de viewheight. */ 
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-
-
-  }
-
-  .building h2{
-    position: absolute; 
-    color: white;
-    left: 50%; top: 50%; 
-    transform:translate(-50%, -50%); 
-    
-    width: 80vw;
-    font-family: 'Goldman', cursive;
-    font-weight: 100;
-    }
-/* discovering Rolex */ 
-
-.discovering-rolex{
-  color: #333;
-  padding: 4em 1.5em 0 1.5em;
-}
-
-.naast-elkaar{
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  padding: 4em 1.5em 1em 1.5em;
-} 
-
-.naast-elkaar img{
-  width: 43vw;
-  height: 65vw;
-  object-fit: cover;
-  border-radius: 2px;
-  margin-bottom: .2em; 
-}
-
-.eronder{
-  display: flex;
-  justify-content: center;
-  padding: 0 1.5em 4em 1.5em;
-  object-fit: cover;
-}
-
-.eronder img{
-  width: 100%; 
-  height: 65vw; 
-}
-
-/* text discovering */ 
-
-.naast-elkaar p{
-  font-size: 1em;
-  line-height: 1.2em;
-  max-width: 40vw;
-}
-
-.naast-elkaar .eronder,  a{
-  color: #333
-}
-
-.naast-elkaar .eronder ,.figureText{
-  font-size: .7em;
-}
 
 /* official rolex retailers */ 
 
-.retailers {
+.retailers{
   position: relative;
   /* achtergrond foto van de header met overlay */ 
   background-image: linear-gradient(
@@ -330,66 +414,96 @@ font-size: .8em;
   
   /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
   100% van de viewheight. */ 
-  background-size: cover; 
   
+  background-size: 100%; 
+  background-repeat: no-repeat;
   background-position: center;
-  height: 70vh;
+  height: 35em; 
+  width: 100%;
+  
   }
 
-.inhetmidden-3{
+  @keyframes zoom-in-retailer{
+    0% {
+      background-size: 100%; 
+    }
+  
+    50% {
+      background-size: 105%;
+    }
+
+    100% {
+      background-size: 100%; 
+    }
+
+  }
+  
+  .retailers:hover{
+    animation: zoom-in-retailer 2s;
+  }
+
+  .retailers a {
+    position: absolute;
+    margin-top: 5em;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: .6em 0 .6em 0; 
+    border-radius: 20px;
+    border: solid 1px white;
+    color: white;
+    left: 50%; top: 50%; 
+    transform:translate(-50%, -50%);
+    width: 11em;
+    text-align: center;
+    transition: .2s
+  }
+
+  .retailers a:hover{
+    background-color: #12784A;
+    border: none;
+  }
+
+  .retailers h2{
     position: absolute; 
     color: white;
     left: 50%; top: 50%; 
     transform:translate(-50%, -50%); 
     text-align: center;
-    width: 80vw;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    width:15em;
+    font-family: "goldman", "cursive";
     }
 
-.retailers a {
-  margin-top: 10em;
-  background-color: rgba(0, 0, 0, 0); 
-  padding: .7em 3em .7em 3em;
-  border-radius: 20px;
-  border: solid 1px white;
-  color: white;
-  position: relative;
-  
-}
 
 
 
 
 /* social links */ 
 
-.social-links{
+.share{
 background-color:#F7F7F7;
 padding: 4em 1.5em 4em 1.5em;
+font-family: "goldman", "cursive"; 
 }
 
-.social-links-list{
+.share ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
   flex-wrap: wrap;
-  padding: 0 2em 0 2em;
+  padding: 0 5em 0 5em;
 }
 
-.social-links-list li{
+.share li{
   border-radius: 100%;
   padding: 1em;
   background-color: white;
-
-
 }
-.social-links-list a{
+
+.share a{
   font-size: 1em;
   color: #12784A;
-
- 
 }
-.titel-social {
+
+.share h2 {
  font-size: 1em; 
  text-align: center;
  margin-bottom: 1.5em;
@@ -397,27 +511,383 @@ padding: 4em 1.5em 4em 1.5em;
 }
 
 footer {
-  color: #d4d4d4;
   background-color: rgb(34,34,34);
   padding: 4em 1.5em 4em 1.5em;
 }
 
+h5{
+margin-top: 1em;
+line-height: 2.2em;
+color: #D4D4D4; 
+font-family: 'goldman', 'cursive';
+font-size: 1em;
+font-weight: 400;
+}
+
 footer a{
-  color: #d4d4d4;
-  line-height: 1.8em;
-  font-size: .8em;
+  color:#D4D4D4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5em;
+  font-size: 1em;
 }
+
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+hr{
+  margin: 0 0 1em 0; 
+}
+
+button{
+  display: block;
+  margin-top: 1em;
+  width: 4em;
+  height: 4em;
+  border-radius: 100%;
+  color: white;
+  background-color: rgb(34,34,34); 
+  border: 1px solid white; 
+  transition: .2s; 
+}
+
+button.darkButton:hover{
+  background-color: #12784A; 
+  border: #12784A; 
+}
+
+button:active{
+  background-color: #12784A; 
+}
+
+
+
+/* tweede pagina ////////
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+*/ 
+
+
+.header-2{
+  position: relative;
+  /* achtergrond foto van de header met overlay */ 
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/elementen/header-foto-pagina2.jpeg);
   
-/* footer hr {
-  margin-bottom: 1em;
-  width: 100vw; 
+  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
+  100% van de viewheight. */ 
+  background-size: cover; 
+  background-position: center;
+  height: 100vh;
+ }
+
+.sponsorship{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto; 
+  grid-gap: 10px;
+  align-content: center;
+  row-gap: 2em;
+  padding: 2em 1.5em 4em 1.5em;
 }
 
+.sponsorship img{
+  width: 100%;
+height: 17em;
+object-fit: cover;
+}
+
+.sports{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto; 
+  grid-gap: 10px;
+  row-gap: 2em;
+  padding: 2em 1.5em 4em 1.5em;
+}
+
+.sports figure:first-of-type{
+  grid-column-start: 1; 
+  grid-column-end: 3;
+}
+
+.sports img{
+width: 100%;
+height: 17em;
+object-fit: cover;
+}
+
+.culture{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  grid-template-rows: auto;
+  
+  grid-gap: 10px;
+  row-gap: 2em;
+  padding: 2em 1.5em 4em 1.5em;
+}
+
+.culture img{
+ width: 100%;
+height: 17em;
+object-fit: cover;
+}
+
+.explore{
+  display: grid;
+  background:none;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto; 
+  grid-gap: 10px;
+  row-gap: 2em;
+  padding: 2em 1.5em 4em 1.5em;
+
+}
+
+.explore img{
+width: 100%;
+height: 17em;
+object-fit: cover;
+}
+
+.story{
+  position: relative;
+  /* achtergrond foto van de header met overlay */ 
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3), rgb(0, 0, 0)),
+    url(../images/pagina-2-elementen/achtergrond-meneer.jpg);
+  
+  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
+  100% van de viewheight. */ 
+  background-size: 100%;
+  height: 17em;
+  width: 100%;
+  
+  }
+
+  @keyframes zoom-in-story{
+    0% {
+      background-size: 100%; 
+    }
+  
+    50% {
+      background-size: 105%;
+    }
+
+    100%{
+      background-size: 100%;
+    }
+  }
+  
+  .story:hover{
+    animation: zoom-in-story 2s;
+  }
+
+  .story a {
+    position: absolute;
+    margin-top: 5em;
+    padding: .6em 0 .6em 0; 
+    border-radius: 20px;
+    border: solid 1px white;
+    color: white;
+    left: 50%; top: 50%; 
+    transform:translate(-50%, -50%);
+    width: 11em;
+    text-align: center;
+    transition: .2s
+  }
+
+  .story a:hover{
+    background-color: #12784A;
+    border: none;
+  }
+
+  .story h2{
+    position: absolute; 
+    color: white;
+    left: 50%; top: 50%; 
+    transform:translate(-50%, -50%); 
+    text-align: center;
+    width:15em;
+    }
+
+
+    @media (min-width: 600px) {
+  .inhetmidden{
+    width: 30em;
+   
+    }
+    
+    .inhetmidden h1{
+      font-size: 2.5em;
+      
+    }
+    
+    .inhetmidden h3{
+     font-size: 1.2em;
+     
+    }
+
+    .slider img{
+      width: 27em;
+     }
+
+     .share ul{
+      padding: 0 8em 0 8em;
+    }
+
+}
+
+@media (min-width: 700px){
+  .retailers{
+    height: 25em;
+  }
+}
+
+@media (min-width: 800px) {
+  .inhetmidden{
+    width: 40em;
+   
+    }
+    
+    .inhetmidden h1{
+      font-size: 2.7em;
+      
+    }
+    
+    .inhetmidden h3{
+     font-size: 1.3em;
+     
+    }
+
+    section:first-of-type {
+      padding: 4em 4em 4em 4em;
+    }
+
+    section:first-of-type h2{
+      font-size: 2em;
+    }
+
+    .slider img{
+      width: 21em;
+     }
+
+     .share ul{
+      padding: 0 11em 0 11em;
+    }
+
+    .discovering img{
+      height: 18em;
+    }
+
+    .discovering{
+      
+      padding: 2em 3em 4em 3em;
+    }
 
 
 
+}
+
+@media (min-width: 1000px) {
+    
+    .inhetmidden h1{
+      font-size: 3em;
+      
+    }
+    
+    .inhetmidden h3{
+     font-size: 1.5em;
+     
+    }
+
+    section:first-of-type {
+      padding: 4em 6.5em 4em 6.5em;
+    }
+
+    section:first-of-type h2{
+      font-size: 2em;
+    }
+
+    a {
+      font-size: 1.1em;
+    }
+
+    .slider img{
+      width: 16em;
+     }
+
+     .share ul{
+      padding: 0 15em 0 15em;
+    }
+    
+    .discovering img{
+      height: 27em; 
+    }
+    
+    .discovering{
+      
+      padding: 2em 10em 4em 10em;
+    }
+
+    .sports img{
+      height: 27em; 
+    }
+    
+    .sports{
+      
+      padding: 2em 10em 4em 10em;
+    }
+
+    .culture img{
+      height: 27em; 
+    }
+    
+    .culture{
+      
+      padding: 2em 10em 4em 10em;
+    }
+
+    .explore img{
+      height: 27em; 
+    }
+    
+    .explore{
+      
+      padding: 2em 10em 4em 10em;
+    }
+
+    .sponsorship img{
+      height: 27em; 
+    }
+    
+    .sponsorship{
+      
+      padding: 2em 10em 4em 10em;
+    }
 
 
+}
+
+@media (min-width: 1100) {
+
+   .share ul{
+    padding: 0 22em 0 22em;
+  }
+
+}
 
 
 
