@@ -552,14 +552,12 @@ button{
   transition: .2s; 
 }
 
-button.darkButton:hover{
+button:hover{
   background-color: #12784A; 
-  border: #12784A; 
+ border: 1px solid rgb(34, 34, 34);
 }
 
-button:active{
-  background-color: #12784A; 
-}
+
 
 
 
@@ -881,7 +879,7 @@ object-fit: cover;
 
 }
 
-@media (min-width: 1100) {
+@media (min-width: 1100px) {
 
    .share ul{
     padding: 0 22em 0 22em;
