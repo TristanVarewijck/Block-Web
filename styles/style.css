@@ -123,7 +123,7 @@ height: 100vh;
 
 /* slider in het menu */ 
 
-.slider-menu{
+div:first-of-type  ul{
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
@@ -132,78 +132,79 @@ height: 100vh;
   margin-bottom: 1em
   
 }
-.slider-menu::-webkit-scrollbar {
+div:first-of-type ul::-webkit-scrollbar {
   height: .3em 
 }
 
-.slider-menu::-webkit-scrollbar-track {
+div:first-of-type ul::-webkit-scrollbar-track {
   background-color: #4E4E4E;
 }
 
-.slider-menu::-webkit-scrollbar-thumb {
+div:first-of-type  ul::-webkit-scrollbar-thumb {
   background-color: white; 
 }
 
-.slider-menu li{
+div:first-of-type  ul li{
   margin-right: 1em; 
 }
 
 
-.slider-menu p{
+div:first-of-type  ul p{
   color: white;
   margin-top: 1em; 
   font-weight: 600;
   font-family: "goldman", "cursive";
 }
 
-.slider-menu img{
+div:first-of-type  ul img{
  width: 10em;
  border-radius: 2px;
  opacity: 0.8;
  transition: .2s;
 }
 
-.slider-menu img:hover{
+div:first-of-type  ul img:hover{
   opacity: 1;
 }
 
-/* footer in menu */ 
-.menu-tekst {
+/* nav (klikbare links) in uitschuif menu */ 
+.navigatie-uitschuif-menu {
   background-color: rgb(34,34,34);
   padding: 1em 1.5em 1em 1.5em;
 }
 
-.menu-tekst a{
+.navigatie-uitschuif-menu a{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2.5em;
   font-size: .9em;
+  font-weight: 400;
 }
 
-.menu-tekst hr{
+.navigatie-uitschuif-menu hr{
   margin-top: 1em;
 }
 
-.fixed-element{
+.fixed-menu-element{
   position: sticky; 
   bottom: 0; 
   background-color: #222222;
   padding: 1em 1.5em 1em 1.5em;
 }
 
-.fixed-element a{
+.fixed-menu-element a{
   color: white; 
   font-size: .8em;
 }
 
 
-/* nav-bar */ 
+/* nav-bar  icons / hamburger / home / search*/ 
 
 nav ul{
   display: flex;
   justify-content: space-between;
-  border: 2em solid rgba(0, 0, 0, 0); 
   list-style-type: none;
+  padding: 2em 1.5em 1em 1.5em;
 }
 
 nav img{
@@ -223,7 +224,7 @@ nav a{
 
 /* header - text */ 
 
-.inhetmidden{
+.header-text{
 position: absolute; 
 color: white;
 left: 50%; top: 50%; 
@@ -233,13 +234,13 @@ width: 23em;
 font-family: 'Goldman', cursive;
 }
 
-.inhetmidden h1{
+.header-text h1{
   letter-spacing: .1em;
   font-size: 1.9em;
   font-weight: 400; 
 }
 
-.inhetmidden h3{
+.header-text h3{
  margin-top: .5em;
  font-size: 1em;
  letter-spacing: .1em;
@@ -247,7 +248,7 @@ font-family: 'Goldman', cursive;
  color: #f0f0f0; 
 }
 
-/* section class .crafted-watches */ 
+/* De eerste class met gradient text */ 
 
 
 section:first-of-type {
@@ -267,7 +268,6 @@ line-height: 1.3em;
 background: -webkit-linear-gradient( right, #eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 section:first-of-type p {
@@ -276,27 +276,22 @@ section:first-of-type p {
   line-height: 1.7em;
   font-weight: 100;
   margin-top: 1em;
-  margin-bottom: 2.2em;
+  margin-bottom: 3em;
   
   }
 
-.watch.buttons{
-  display: flex;
-  margin-top: 1em; 
-}
-
-.watch-buttons a{ 
+.home section:first-of-type div a{ 
   text-decoration: none;
   transition-duration: 0.2s;
   color: #12784A;
 
 
 }
-.button-noborder:hover{
+.home section a:last-of-type:hover{
   opacity: .5;
 }
 
-.button-border{
+.home section:first-of-type div a:first-of-type{
 margin-right: 1em;
 background-color: rgba(0, 0, 0, 0); 
 padding: .7em 2em .7em 2em;
@@ -306,7 +301,7 @@ transition-duration: 0.2s;
 
 }
 
-.button-border:hover{
+.home section:first-of-type div a:first-of-type:hover{
   background-color: #12784A;
   color: white;
   
@@ -314,74 +309,72 @@ transition-duration: 0.2s;
 
 /* sliderrr */ 
 
-.view-all{
+.home section:nth-of-type(2) a:first-of-type{
   display: inline;
-  margin-left: 3px;
+  margin-left: 1px;
+  color: #12784A;
   transition-duration: 0.2s;
 }
 
-.view-all:hover{
+.home section:nth-of-type(2) a:first-of-type:hover{
   opacity: .5;
 }
 
-.view-all{
- color: #12784A;
-
-}
-
-.slider{
+.home section:nth-of-type(2) ul{
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
   list-style: none;
-  padding: 4em 1.5em 2em 1.5em;
+  padding: 1.5em 1.5em 2em 1.5em;
   margin-bottom: 2em;
   
 }
 
 /* Bron van de webkits om de scrollbar te stylen 
  https://css-tricks.com/almanac/properties/s/scrollbar/ */ 
-.slider::-webkit-scrollbar {
+ .home section:nth-of-type(2) ul::-webkit-scrollbar {
   height: .3em;  
 }
 
-.slider::-webkit-scrollbar-track {
+.home section:nth-of-type(2) ul::-webkit-scrollbar-track {
   background-color: #D3D3D3;
 }
 
-.slider::-webkit-scrollbar-thumb {
+.home section:nth-of-type(2) ul::-webkit-scrollbar-thumb {
   background-color: #12784A;
 }
 
-.slider li{
+.home section:nth-of-type(2) li{
   margin-right: 1em;
  
 }
 
-
-.slider figcaption{
+.home section:nth-of-type(2) figcaption{
   color: #333;
   margin-top: 1em; 
 }
 
-.figureTitel{
+
+
+figcaption p:first-of-type{
  font-family: 'goldman', 'cursive';
  font-weight: 700;
  margin-bottom: 0.5em; 
 }
 
-.figureMore{
+figcaption p:last-of-type{
 font-weight: 600;
 font-size: .8em;
 }
 
-.slider img{
+.home section:nth-of-type(2) img{
  width: 20em;
  border-radius: 2px;
-
+ border:none;
 }
 
-.discovering{
+
+.home section:nth-of-type(3){
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto; 
@@ -390,12 +383,12 @@ font-size: .8em;
   padding: 2em 1.5em 4em 1.5em;
 }
 
-.discovering figure:last-of-type{
+.home section:nth-of-type(3) figure:last-of-type{
   grid-column-start: 1; 
   grid-column-end: 3;
 }
 
-.discovering img{
+.home section:nth-of-type(3) img{
   width: 100%;
 height: 17em;
 object-fit: cover;
@@ -405,7 +398,7 @@ object-fit: cover;
 
 /* official rolex retailers */ 
 
-.retailers{
+.home section:nth-of-type(4){
   position: relative;
   /* achtergrond foto van de header met overlay */ 
   background-image: linear-gradient(
@@ -438,11 +431,11 @@ object-fit: cover;
 
   }
   
-  .retailers:hover{
+  .home section:nth-of-type(4):hover{
     animation: zoom-in-retailer 2s;
   }
 
-  .retailers a {
+  .home section:nth-of-type(4) a {
     position: absolute;
     margin-top: 5em;
     background-color: rgba(0, 0, 0, 0); 
@@ -457,12 +450,12 @@ object-fit: cover;
     transition: .2s
   }
 
-  .retailers a:hover{
+  .home section:nth-of-type(4) a:hover{
     background-color: #12784A;
     border: none;
   }
 
-  .retailers h2{
+  .home section:nth-of-type(4) h2{
     position: absolute; 
     color: white;
     left: 50%; top: 50%; 
@@ -478,13 +471,13 @@ object-fit: cover;
 
 /* social links */ 
 
-.share{
+section:last-of-type{
 background-color:#F7F7F7;
 padding: 4em 1.5em 4em 1.5em;
 font-family: "goldman", "cursive"; 
 }
 
-.share ul{
+section:last-of-type ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -492,18 +485,18 @@ font-family: "goldman", "cursive";
   padding: 0 5em 0 5em;
 }
 
-.share li{
+section:last-of-type li{
   border-radius: 100%;
   padding: 1em;
   background-color: white;
 }
 
-.share a{
+section:last-of-type a{
   font-size: 1em;
   color: #12784A;
 }
 
-.share h2 {
+section:last-of-type h2 {
  font-size: 1em; 
  text-align: center;
  margin-bottom: 1.5em;
@@ -531,7 +524,7 @@ footer a{
   font-size: 1em;
 }
 
-.footer-links{
+footer div{
   display: flex;
   justify-content: space-between;
 }
@@ -577,7 +570,7 @@ button:hover{
 */ 
 
 
-.header-2{
+.world header{
   position: relative;
   /* achtergrond foto van de header met overlay */ 
   background-image: linear-gradient(
@@ -591,7 +584,7 @@ button:hover{
   height: 100vh;
  }
 
-.sponsorship{
+ .world section:nth-of-type(2){
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto; 
@@ -601,13 +594,13 @@ button:hover{
   padding: 2em 1.5em 4em 1.5em;
 }
 
-.sponsorship img{
+.world section:nth-of-type(2) img{
   width: 100%;
 height: 17em;
 object-fit: cover;
 }
 
-.sports{
+.world section:nth-of-type(3){
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto; 
@@ -616,18 +609,18 @@ object-fit: cover;
   padding: 2em 1.5em 4em 1.5em;
 }
 
-.sports figure:first-of-type{
+.world section:nth-of-type(3) figure:first-of-type{
   grid-column-start: 1; 
   grid-column-end: 3;
 }
 
-.sports img{
+.world section:nth-of-type(3) img{
 width: 100%;
 height: 17em;
 object-fit: cover;
 }
 
-.culture{
+.world section:nth-of-type(4){
   display: grid;
   grid-template-columns: repeat(2 ,1fr);
   grid-template-rows: auto;
@@ -637,13 +630,13 @@ object-fit: cover;
   padding: 2em 1.5em 4em 1.5em;
 }
 
-.culture img{
+.world section:nth-of-type(4) img{
  width: 100%;
 height: 17em;
 object-fit: cover;
 }
 
-.explore{
+.world section:nth-of-type(5){
   display: grid;
   background:none;
   grid-template-columns: repeat(1, 1fr);
@@ -654,13 +647,13 @@ object-fit: cover;
 
 }
 
-.explore img{
+.world section:nth-of-type(5) img{
 width: 100%;
 height: 17em;
 object-fit: cover;
 }
 
-.story{
+.world section:nth-of-type(6){
   position: relative;
   /* achtergrond foto van de header met overlay */ 
   background-image: linear-gradient(
@@ -689,11 +682,11 @@ object-fit: cover;
     }
   }
   
-  .story:hover{
+  .world section:nth-of-type(6):hover{
     animation: zoom-in-story 2s;
   }
 
-  .story a {
+  .world section:nth-of-type(6) a {
     position: absolute;
     margin-top: 5em;
     padding: .6em 0 .6em 0; 
@@ -707,12 +700,12 @@ object-fit: cover;
     transition: .2s
   }
 
-  .story a:hover{
+  .world section:nth-of-type(6) a:hover{
     background-color: #12784A;
     border: none;
   }
 
-  .story h2{
+  .world section:nth-of-type(6) h2{
     position: absolute; 
     color: white;
     left: 50%; top: 50%; 
@@ -723,49 +716,49 @@ object-fit: cover;
 
 
     @media (min-width: 600px) {
-  .inhetmidden{
+  .header-text{
     width: 30em;
    
     }
     
-    .inhetmidden h1{
+    .header-text h1{
       font-size: 2.5em;
       
     }
     
-    .inhetmidden h3{
+    .header-text h3{
      font-size: 1.2em;
      
     }
 
-    .slider img{
+    .home section:nth-of-type(2) img{
       width: 27em;
      }
 
-     .share ul{
+     section:last-of-type ul{
       padding: 0 8em 0 8em;
     }
 
 }
 
 @media (min-width: 700px){
-  .retailers{
+  .home section:nth-of-type(4){
     height: 25em;
   }
 }
 
 @media (min-width: 800px) {
-  .inhetmidden{
+  .header-text{
     width: 40em;
    
     }
     
-    .inhetmidden h1{
+    .header-text h1{
       font-size: 2.7em;
       
     }
     
-    .inhetmidden h3{
+    .header-text h3{
      font-size: 1.3em;
      
     }
@@ -778,19 +771,19 @@ object-fit: cover;
       font-size: 2em;
     }
 
-    .slider img{
+    .home section:nth-of-type(2) img{
       width: 21em;
      }
 
-     .share ul{
+     section:last-of-type ul{
       padding: 0 11em 0 11em;
     }
 
-    .discovering img{
+    .home section:nth-of-type(3) img{
       height: 18em;
     }
 
-    .discovering{
+    .home section:nth-of-type(3){
       
       padding: 2em 3em 4em 3em;
     }
@@ -801,12 +794,12 @@ object-fit: cover;
 
 @media (min-width: 1000px) {
     
-    .inhetmidden h1{
+    .header-text h1{
       font-size: 3em;
       
     }
     
-    .inhetmidden h3{
+    .header-text h3{
      font-size: 1.5em;
      
     }
@@ -823,55 +816,55 @@ object-fit: cover;
       font-size: 1.1em;
     }
 
-    .slider img{
+    .home section:nth-of-type(2) img{
       width: 16em;
      }
 
-     .share ul{
+     section:last-of-type ul{
       padding: 0 15em 0 15em;
     }
     
-    .discovering img{
+    .home section:nth-of-type(3) img{
       height: 27em; 
     }
     
-    .discovering{
+    .home section:nth-of-type(3){
       
       padding: 2em 10em 4em 10em;
     }
 
-    .sports img{
+    .world section:nth-of-type(3) img{
       height: 27em; 
     }
     
-    .sports{
+    .world section:nth-of-type(3){
       
       padding: 2em 10em 4em 10em;
     }
 
-    .culture img{
+    .world section:nth-of-type(4) img{
       height: 27em; 
     }
     
-    .culture{
+    .world section:nth-of-type(4){
       
       padding: 2em 10em 4em 10em;
     }
 
-    .explore img{
+    .world section:nth-of-type(5) img{
       height: 27em; 
     }
     
-    .explore{
+    .world section:nth-of-type(5){
       
       padding: 2em 10em 4em 10em;
     }
 
-    .sponsorship img{
+    .world section:nth-of-type(2) img{
       height: 27em; 
     }
     
-    .sponsorship{
+    .world section:nth-of-type(2){
       
       padding: 2em 10em 4em 10em;
     }
@@ -881,7 +874,7 @@ object-fit: cover;
 
 @media (min-width: 1100px) {
 
-   .share ul{
+  section:last-of-type ul{
     padding: 0 22em 0 22em;
   }
 

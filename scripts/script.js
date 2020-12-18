@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // Menu-tevoorschijn 
-var hamburgerMenu = document.querySelector(".hamburger");
+var hamburgerMenu = document.querySelector("nav li:first-of-type");
 
 hamburgerMenu.addEventListener("click", menuSlide); 
 
