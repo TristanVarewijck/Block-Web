@@ -40,7 +40,6 @@ color: white;
 h4{
   padding: 4em 1.5em 0 1.5em;
   font-weight: 400;
-
 }
 
 
@@ -53,28 +52,42 @@ h2 {
 a {
   text-decoration: none;
   cursor: pointer;
+
 }
 
 
 
-/* nav-bar */
+/* Responsive nav items */
+.responsive-menu-items{ 
+  position: absolute;
+  list-style-type: none;
+  left: 5%; 
+  top: 2em;
+}
 
-nav{
-  z-index: 99;
+.responsive-menu-items li{ 
+  display: inline;
+  margin-left: 1.5em;
+
+} 
+
+.responsive-menu-items a{ 
   color: white; 
-  width: 100vw;
+  text-decoration: none; 
+  transition: .2s;
+} 
+
+.responsive-menu-items a:hover{
+ 
+  color: #12784A;
 }
 
 /* header */ 
-
+/* linear-gradient bron: https://www.w3schools.com/cssref/func_linear-gradient.asp*/
 header {
-/* achtergrond foto van de header met overlay */ 
 background-image: linear-gradient(
   rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
   url(../images/elementen/header-foto.jpg);
-
-/* foto bedekt de hele oppervlakt in het midden gecentreerd van 
-100% van de viewheight. */ 
 background-size: cover; 
 background-attachment: fixed;
 background-position: center;
@@ -82,22 +95,7 @@ height: 100vh;
 
 }
 
-
-
-
-
-/* slider menu / inspiratie bron: https://codepen.io/shooft/pen/PoNQwXY \
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-*/ 
+/* verborgen nav / inspiratie bron: https://codepen.io/shooft/pen/PoNQwXY */ 
 .menu-hidden{
     background-color: #222222;
     z-index: 99;
@@ -121,8 +119,53 @@ height: 100vh;
   overflow-y: scroll;
 }
 
-/* slider in het menu */ 
+/* nav (klikbare links) in het uitschuif menu */ 
+.navigatie-uitschuif-menu {
+  background-color: rgb(34,34,34);
+  padding: 1em 1.5em 1em 1.5em;
+}
 
+.navigatie-uitschuif-menu a{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.5em;
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.navigatie-uitschuif-menu hr{
+  margin-top: 1em;
+  width: 100%;
+  animation: lines 5s;
+}
+
+
+@keyframes lines{
+  0%{
+    width: 100%; 
+  }
+  50%{
+    width: 0%; 
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+/* fixed position bron: https://www.w3schools.com/css/css_positioning.asp*/ 
+.fixed-menu-element{
+  position: sticky; 
+  bottom: 0; 
+  background-color: #222222;
+  padding: 1em 1.5em 1em 1.5em;
+}
+
+.fixed-menu-element a{
+  color: white; 
+  font-size: .8em;
+}
+
+/* slider in het uitschuif menu */ 
 div:first-of-type  ul{
   display: flex;
   flex-wrap: nowrap;
@@ -132,6 +175,8 @@ div:first-of-type  ul{
   margin-bottom: 1em
   
 }
+
+/* Voor het stylen van de scrollbar bron: https://css-tricks.com/the-current-state-of-styling-scrollbars/ */ 
 div:first-of-type ul::-webkit-scrollbar {
   height: .3em 
 }
@@ -167,38 +212,13 @@ div:first-of-type  ul img:hover{
   opacity: 1;
 }
 
-/* nav (klikbare links) in uitschuif menu */ 
-.navigatie-uitschuif-menu {
-  background-color: rgb(34,34,34);
-  padding: 1em 1.5em 1em 1.5em;
+/* nav-bar  icons / hamburger / home / search*/
+nav {
+  z-index: 99;
+  width: 100%;
+  text-decoration: none;
+  list-style:none;
 }
-
-.navigatie-uitschuif-menu a{
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2.5em;
-  font-size: .9em;
-  font-weight: 400;
-}
-
-.navigatie-uitschuif-menu hr{
-  margin-top: 1em;
-}
-
-.fixed-menu-element{
-  position: sticky; 
-  bottom: 0; 
-  background-color: #222222;
-  padding: 1em 1.5em 1em 1.5em;
-}
-
-.fixed-menu-element a{
-  color: white; 
-  font-size: .8em;
-}
-
-
-/* nav-bar  icons / hamburger / home / search*/ 
 
 nav ul{
   display: flex;
@@ -220,10 +240,10 @@ nav a{
   font-size: 1.5em; 
   font-weight: 600;
   color: white;
+  
 }
 
-/* header - text */ 
-
+/* header tekst in het midden. bron: https://stackoverflow.com/questions/42121150/css-centering-with-transform  */ 
 .header-text{
 position: absolute; 
 color: white;
@@ -248,7 +268,6 @@ font-family: 'Goldman', cursive;
  color: #f0f0f0; 
 }
 
-/* De eerste class met gradient text */ 
 
 
 section:first-of-type {
@@ -259,6 +278,7 @@ section:first-of-type {
   background-color: rgb(247, 247, 247);
 }
 
+/* gradient text bron: https://cssgradient.io/blog/css-gradient-text/*/ 
 section:first-of-type h2 {
 font-family: 'goldman', cursive;
 font-weight: 400;
@@ -268,6 +288,7 @@ line-height: 1.3em;
 background: -webkit-linear-gradient( right, #eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 section:first-of-type p {
@@ -287,6 +308,7 @@ section:first-of-type p {
 
 
 }
+
 .home section a:last-of-type:hover{
   opacity: .5;
 }
@@ -297,7 +319,7 @@ background-color: rgba(0, 0, 0, 0);
 padding: .7em 2em .7em 2em;
 border-radius: 20px;
 border: solid 1px #12784A;
-transition-duration: 0.2s;
+transition-duration: 2s ease-out;
 
 }
 
@@ -306,8 +328,6 @@ transition-duration: 0.2s;
   color: white;
   
 } 
-
-/* sliderrr */ 
 
 .home section:nth-of-type(2) a:first-of-type{
   display: inline;
@@ -320,6 +340,8 @@ transition-duration: 0.2s;
   opacity: .5;
 }
 
+/* slider met Flexbox. Bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED1
+16-DMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20flexbox.pdf*/ 
 .home section:nth-of-type(2) ul{
   display: flex;
   flex-wrap: nowrap;
@@ -330,8 +352,11 @@ transition-duration: 0.2s;
   
 }
 
-/* Bron van de webkits om de scrollbar te stylen 
- https://css-tricks.com/almanac/properties/s/scrollbar/ */ 
+.slider-heading{
+  padding: 4em 1.5em 0 1.5em;
+  font-weight: 400;
+}
+
  .home section:nth-of-type(2) ul::-webkit-scrollbar {
   height: .3em;  
 }
@@ -353,7 +378,6 @@ transition-duration: 0.2s;
   color: #333;
   margin-top: 1em; 
 }
-
 
 
 figcaption p:first-of-type{
@@ -392,49 +416,34 @@ font-size: .8em;
   width: 100%;
 height: 17em;
 object-fit: cover;
+transition: .2s ease-out;
+border-bottom: rgba(255, 255, 255, 0) solid;
+}
+
+.home section:nth-of-type(3) img:hover{
+border-bottom: 1em rgba(255, 255, 255, 0) solid; 
+
 }
 
 
 
 /* official rolex retailers */ 
-
 .home section:nth-of-type(4){
-  position: relative;
-  /* achtergrond foto van de header met overlay */ 
+  position: relative; 
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/elementen/buy-rolex-achtergrond.webp);
+    url(../images/elementen/store-locator-mobile.webp);
   
-  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
-  100% van de viewheight. */ 
-  
-  background-size: 100%; 
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
   height: 35em; 
   width: 100%;
-  
   }
 
-  @keyframes zoom-in-retailer{
-    0% {
-      background-size: 100%; 
-    }
-  
-    50% {
-      background-size: 105%;
-    }
 
-    100% {
-      background-size: 100%; 
-    }
 
-  }
-  
-  .home section:nth-of-type(4):hover{
-    animation: zoom-in-retailer 2s;
-  }
-
+ 
   .home section:nth-of-type(4) a {
     position: absolute;
     margin-top: 5em;
@@ -470,7 +479,6 @@ object-fit: cover;
 
 
 /* social links */ 
-
 section:last-of-type{
 background-color:#F7F7F7;
 padding: 4em 1.5em 4em 1.5em;
@@ -542,12 +550,12 @@ button{
   color: white;
   background-color: rgb(34,34,34); 
   border: 1px solid white; 
-  transition: .2s; 
+  transition: .2s ease-out; 
 }
 
 button:hover{
   background-color: #12784A; 
- border: 1px solid rgb(34, 34, 34);
+  border: 1px solid rgb(34, 34, 34);
 }
 
 
@@ -571,20 +579,16 @@ button:hover{
 
 
 .world header{
-  position: relative;
-  /* achtergrond foto van de header met overlay */ 
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/elementen/header-foto-pagina2.jpeg);
-  
-  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
-  100% van de viewheight. */ 
-  background-size: cover; 
-  background-position: center;
-  height: 100vh;
+
  }
 
- .world section:nth-of-type(2){
+ /* Grid bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED116-DMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20grid.pdf*/ 
+  /* bron: https://css-tricks.com/snippets/css/complete-guide-grid/*/ 
+  /* bron: https://www.youtube.com/watch?v=br-0i3U1VCA&feature=youtu.be */ 
+  .world section:nth-of-type(2){
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto; 
@@ -596,9 +600,17 @@ button:hover{
 
 .world section:nth-of-type(2) img{
   width: 100%;
-height: 17em;
-object-fit: cover;
+  height: 17em;
+  object-fit: cover;
+  transition: .2s ease-out;
+  border-bottom: rgba(255, 255, 255, 0) solid;
 }
+
+.world section:nth-of-type(2) img:hover{
+  border-bottom: 1em rgba(255, 255, 255, 0) solid; 
+  
+  }
+
 
 .world section:nth-of-type(3){
   display: grid;
@@ -618,6 +630,13 @@ object-fit: cover;
 width: 100%;
 height: 17em;
 object-fit: cover;
+transition: .2s ease-out;
+border-bottom: rgba(255, 255, 255, 0) solid;
+}
+
+.world section:nth-of-type(3) img:hover{
+  border-bottom: 1em rgba(255, 255, 255, 0) solid; 
+  
 }
 
 .world section:nth-of-type(4){
@@ -634,6 +653,13 @@ object-fit: cover;
  width: 100%;
 height: 17em;
 object-fit: cover;
+transition: .2s ease-out;
+border-bottom: rgba(255, 255, 255, 0) solid;
+}
+
+.world section:nth-of-type(4) img:hover{
+  border-bottom: 1em rgba(255, 255, 255, 0) solid; 
+  
 }
 
 .world section:nth-of-type(5){
@@ -651,39 +677,24 @@ object-fit: cover;
 width: 100%;
 height: 17em;
 object-fit: cover;
+transition: .2s ease-out;
+border-bottom: rgba(255, 255, 255, 0) solid;
+}
+
+.world section:nth-of-type(5) img:hover{
+border-bottom: 1em rgba(255, 255, 255, 0) solid; 
+
 }
 
 .world section:nth-of-type(6){
-  position: relative;
-  /* achtergrond foto van de header met overlay */ 
+  position: relative; 
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.3), rgb(0, 0, 0)),
-    url(../images/pagina-2-elementen/achtergrond-meneer.jpg);
-  
-  /* foto bedekt de hele oppervlakt in het midden gecentreerd van 
-  100% van de viewheight. */ 
-  background-size: 100%;
+    rgba(0, 0, 0, 0.1), rgb(0, 0, 0)),
+    url(../images/pagina-2-elementen/world-of-rolex-meneer.jpg);
+  background-size: cover;
   height: 17em;
   width: 100%;
   
-  }
-
-  @keyframes zoom-in-story{
-    0% {
-      background-size: 100%; 
-    }
-  
-    50% {
-      background-size: 105%;
-    }
-
-    100%{
-      background-size: 100%;
-    }
-  }
-  
-  .world section:nth-of-type(6):hover{
-    animation: zoom-in-story 2s;
   }
 
   .world section:nth-of-type(6) a {
@@ -697,7 +708,7 @@ object-fit: cover;
     transform:translate(-50%, -50%);
     width: 11em;
     text-align: center;
-    transition: .2s
+    transition: .2s ease-out;
   }
 
   .world section:nth-of-type(6) a:hover{
@@ -714,8 +725,12 @@ object-fit: cover;
     width:15em;
     }
 
+    
 
-    @media (min-width: 600px) {
+  /* @media om het responsive te maken bron: https://dlo.mijnhva.nl/content/enforced
+  /192710-FDMCI-2000FDMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20media%20queries.pdf*/
+  /* bron: https://www.youtube.com/watch?v=2KL-z9A56SQ&feature=youtu.be*/ 
+  @media (min-width: 600px) {
   .header-text{
     width: 30em;
    
@@ -745,7 +760,14 @@ object-fit: cover;
   .home section:nth-of-type(4){
     height: 25em;
   }
+
+  .home section:nth-of-type(4){ 
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../images/elementen/store-locator-700.jpg);
+    }
 }
+
 
 @media (min-width: 800px) {
   .header-text{
@@ -784,15 +806,14 @@ object-fit: cover;
     }
 
     .home section:nth-of-type(3){
-      
       padding: 2em 3em 4em 3em;
     }
 
-
-
+  
 }
 
-@media (min-width: 1000px) {
+
+@media (min-width: 980px) {
     
     .header-text h1{
       font-size: 3em;
@@ -869,6 +890,15 @@ object-fit: cover;
       padding: 2em 10em 4em 10em;
     }
 
+    .home section:nth-of-type(4){ 
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../images/elementen/store-locator.jpg);
+      }
+   
+      h4{
+      padding: 2em 10em 1em 10em;
+    }
 
 }
 
@@ -877,8 +907,16 @@ object-fit: cover;
   section:last-of-type ul{
     padding: 0 22em 0 22em;
   }
-
 }
+
+
+
+@media (max-width: 1200px){
+  .responsive-menu-items{
+    display: none;
+  }
+}
+
 
 
 
