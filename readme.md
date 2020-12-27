@@ -1,9 +1,6 @@
 # Procesverslag
 **Auteur:** Tristan Varewijck
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-
 
 ## Bronnenlijst
 1. Background-image linear-gradient. Bron: https://www.w3schools.com/cssref/func_linear-gradient.asp
@@ -23,18 +20,33 @@ Bron: https://www.youtube.com/watch?v=br-0i3U1VCA&feature=youtu.be
 11. Algemene dingetjes. Bron: https://developer.mozilla.org/nl/
 12. Algemene dingetjes. Bron: https://www.w3schools.com/
 13. Javascript. Bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED116-DMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20JS%203-stap.pdf
-14. Keyframes. Bron: https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes  
-
-
+14. Keyframes. Bron: https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_keyframes 
+15. Icons. Bron: ionicons.com  
+16. Alle gebruikte foto's los van de header-foto's komen van https://www.rolex.com/. 
+17. Header foto pagina 1. Bron: https://www.pexels.com/nl-nl/foto/aantal-analoog-cameralens-chroom-364822/
+18. Header foto pagina 2. Bron: https://www.pexels.com/nl-nl/foto/wagens-weg-landschap-lichten-3136673/ 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
 
-**Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+
+<img src="/voortgang-w3/w3.1.png">
+
+<img src="/voortgang-w3/w3.2.png">
+
+<img src="/voortgang-w3/w3.3.png">
+
+<img src="/voortgang-w3/w3.4.png">
+
+<img src="/voortgang-w3/w3.5.png">
+
+<img src="/voortgang-w3/w3.6.png">
+
+<img src="/voortgang-w3/w3.7.png">
+
+<img src="/voortgang-w3/w3.8.png">
 
 
 
@@ -78,6 +90,7 @@ Bron: https://www.youtube.com/watch?v=br-0i3U1VCA&feature=youtu.be
 <img src="voortgang-w2/Voortgang-2.7.png">
 
 <img src="voortgang-w2/Voortgang-2.8.png">
+
 
 ## Voortgang 1 (week 3)
 

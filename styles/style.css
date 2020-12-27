@@ -17,7 +17,6 @@
 .dark-mode{
 background: #191919;
 color: white; 
-
 }
 
 .dark-mode a {
@@ -26,7 +25,6 @@ color: white;
 
 .dark-mode p{
   color: white;
-
 }
 
 .dark-mode section:last-of-type{
@@ -40,22 +38,18 @@ color: white;
 h4{
   padding: 4em 1.5em 0 1.5em;
   font-weight: 400;
+  max-width: 1500px;
+  margin: 0 auto; 
 }
-
 
 h2 {
   font-family: 'goldman', 'cursive'; 
 }
 
-
-
 a {
   text-decoration: none;
   cursor: pointer;
-
 }
-
-
 
 /* Responsive nav items */
 .responsive-menu-items{ 
@@ -75,15 +69,27 @@ a {
   color: white; 
   text-decoration: none; 
   transition: .2s;
+  font-size: 1.1em;
 } 
 
 .responsive-menu-items a:hover{
- 
-  color: #12784A;
+  color:#12784A;
+  
 }
+
+.responsive-menu-items a:focus{
+  border: 2px solid blue; 
+  padding: 2px; 
+}
+
+.responsive-menu-items a:active{
+  color:#A47E2D; 
+}
+
 
 /* header */ 
 /* linear-gradient bron: https://www.w3schools.com/cssref/func_linear-gradient.asp*/
+/* Header foto. Bron: https://www.pexels.com/nl-nl/foto/aantal-analoog-cameralens-chroom-364822/*/ 
 header {
 background-image: linear-gradient(
   rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -92,8 +98,8 @@ background-size: cover;
 background-attachment: fixed;
 background-position: center;
 height: 100vh;
-
 }
+
 
 /* verborgen nav / inspiratie bron: https://codepen.io/shooft/pen/PoNQwXY */ 
 .menu-hidden{
@@ -131,12 +137,26 @@ height: 100vh;
   line-height: 2.5em;
   font-size: .9em;
   font-weight: 400;
+  transition: .2s ease-in-out; 
+}
+
+.navigatie-uitschuif-menu a:hover{
+  color:#12784A; 
+}
+
+.navigatie-uitschuif-menu a:focus{
+  border: 2px solid blue;
+  padding: 2px;  
+}
+
+.navigatie-uitschuif-menu a:active{
+  color:#A47E2D; 
 }
 
 .navigatie-uitschuif-menu hr{
   margin-top: 1em;
   width: 100%;
-  animation: lines 5s;
+  animation: lines 7s;
 }
 
 
@@ -152,6 +172,7 @@ height: 100vh;
   }
 }
 
+
 /* fixed position bron: https://www.w3schools.com/css/css_positioning.asp*/ 
 .fixed-menu-element{
   position: sticky; 
@@ -163,7 +184,23 @@ height: 100vh;
 .fixed-menu-element a{
   color: white; 
   font-size: .8em;
+  transition: .2s ease-in-out;
 }
+
+.fixed-menu-element a:hover{
+  color:#12784A;
+}
+
+.fixed-menu-element a:focus{
+  border: 2px solid blue; 
+  padding: 2px; 
+}
+
+.fixed-menu-element a:active{
+  color:#A47E2D; 
+}
+
+
 
 /* slider in het uitschuif menu */ 
 div:first-of-type  ul{
@@ -173,8 +210,8 @@ div:first-of-type  ul{
   list-style: none;
   padding: 2em 1.5em 1em 1.5em;
   margin-bottom: 1em
-  
 }
+
 
 /* Voor het stylen van de scrollbar bron: https://css-tricks.com/the-current-state-of-styling-scrollbars/ */ 
 div:first-of-type ul::-webkit-scrollbar {
@@ -193,7 +230,6 @@ div:first-of-type  ul li{
   margin-right: 1em; 
 }
 
-
 div:first-of-type  ul p{
   color: white;
   margin-top: 1em; 
@@ -211,6 +247,7 @@ div:first-of-type  ul img{
 div:first-of-type  ul img:hover{
   opacity: 1;
 }
+
 
 /* nav-bar  icons / hamburger / home / search*/
 nav {
@@ -240,7 +277,20 @@ nav a{
   font-size: 1.5em; 
   font-weight: 600;
   color: white;
-  
+  transition: .2s ease-in-out;
+}
+
+nav a:hover{
+  color:#12784A;
+}
+
+nav a:focus{
+  border: 2px solid blue; 
+}
+
+nav a:active{
+  color:#A47E2D;
+
 }
 
 /* header tekst in het midden. bron: https://stackoverflow.com/questions/42121150/css-centering-with-transform  */ 
@@ -256,27 +306,25 @@ font-family: 'Goldman', cursive;
 
 .header-text h1{
   letter-spacing: .1em;
-  font-size: 1.9em;
+  font-size: 2.5em;
   font-weight: 400; 
 }
 
 .header-text h3{
  margin-top: .5em;
- font-size: 1em;
+ font-size: 1.5em;
  letter-spacing: .1em;
  font-weight: 400;
  color: #f0f0f0; 
 }
 
-
-
 section:first-of-type {
   padding: 4em 1.5em 4em 1.5em;
   display: flex;
   flex-wrap: wrap;
-
   background-color: rgb(247, 247, 247);
 }
+
 
 /* gradient text bron: https://cssgradient.io/blog/css-gradient-text/*/ 
 section:first-of-type h2 {
@@ -288,7 +336,6 @@ line-height: 1.3em;
 background: -webkit-linear-gradient( right, #eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 section:first-of-type p {
@@ -298,21 +345,28 @@ section:first-of-type p {
   font-weight: 100;
   margin-top: 1em;
   margin-bottom: 3em;
-  
-  }
+}
 
 .home section:first-of-type div a{ 
   text-decoration: none;
   transition-duration: 0.2s;
   color: #12784A;
-
-
 }
 
-.home section a:last-of-type:hover{
+.home section:first-of-type div a:hover{
   opacity: .5;
+} 
+
+.home section:first-of-type div a:focus{
+  border: 1px solid blue;
+  padding: 2px;
 }
 
+.home section:first-of-type div a:active{
+  color:#A47E2D; 
+}
+
+/* Watch finder */ 
 .home section:first-of-type div a:first-of-type{
 margin-right: 1em;
 background-color: rgba(0, 0, 0, 0); 
@@ -320,15 +374,24 @@ padding: .7em 2em .7em 2em;
 border-radius: 20px;
 border: solid 1px #12784A;
 transition-duration: 2s ease-out;
-
 }
 
 .home section:first-of-type div a:first-of-type:hover{
   background-color: #12784A;
-  color: white;
-  
+  color: white; 
+  opacity: 1 ; 
 } 
 
+.home section:first-of-type div a:first-of-type:focus{
+  border: 1px solid blue;
+}
+
+.home section:first-of-type div a:first-of-type:active{
+  color:#A47E2D; 
+}
+
+
+/* view all */ 
 .home section:nth-of-type(2) a:first-of-type{
   display: inline;
   margin-left: 1px;
@@ -338,6 +401,16 @@ transition-duration: 2s ease-out;
 
 .home section:nth-of-type(2) a:first-of-type:hover{
   opacity: .5;
+} 
+
+.home section:nth-of-type(2) a:first-of-type:focus{
+  border: 2px solid blue;
+  padding: 1px; 
+}
+
+.home section:nth-of-type(2) a:first-of-type:active{
+  color:#A47E2D;
+  opacity: 1; 
 }
 
 /* slider met Flexbox. Bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED1
@@ -348,8 +421,7 @@ transition-duration: 2s ease-out;
   overflow-x: scroll;
   list-style: none;
   padding: 1.5em 1.5em 2em 1.5em;
-  margin-bottom: 2em;
-  
+  margin-bottom: 2em; 
 }
 
 .slider-heading{
@@ -371,7 +443,6 @@ transition-duration: 2s ease-out;
 
 .home section:nth-of-type(2) li{
   margin-right: 1em;
- 
 }
 
 .home section:nth-of-type(2) figcaption{
@@ -379,11 +450,11 @@ transition-duration: 2s ease-out;
   margin-top: 1em; 
 }
 
-
 figcaption p:first-of-type{
  font-family: 'goldman', 'cursive';
  font-weight: 700;
  margin-bottom: 0.5em; 
+
 }
 
 figcaption p:last-of-type{
@@ -397,7 +468,7 @@ font-size: .8em;
  border:none;
 }
 
-
+/* Artikelen */ 
 .home section:nth-of-type(3){
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -405,6 +476,8 @@ font-size: .8em;
   grid-gap: 10px;
   row-gap: 2em;
   padding: 2em 1.5em 4em 1.5em;
+  max-width: 1500px;
+  margin: 0 auto; 
 }
 
 .home section:nth-of-type(3) figure:last-of-type{
@@ -426,7 +499,6 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
 }
 
 
-
 /* official rolex retailers */ 
 .home section:nth-of-type(4){
   position: relative; 
@@ -441,9 +513,7 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
   width: 100%;
   }
 
-
-
- 
+  /* Find a Boutique */ 
   .home section:nth-of-type(4) a {
     position: absolute;
     margin-top: 5em;
@@ -461,7 +531,16 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
 
   .home section:nth-of-type(4) a:hover{
     background-color: #12784A;
+    color: white; 
     border: none;
+  } 
+  
+  .home section:nth-of-type(4) a:focus{
+    border: 1px solid blue;
+  }
+  
+  .home section:nth-of-type(4) a:active{
+    color:#A47E2D; 
   }
 
   .home section:nth-of-type(4) h2{
@@ -473,9 +552,6 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     width:15em;
     font-family: "goldman", "cursive";
     }
-
-
-
 
 
 /* social links */ 
@@ -504,6 +580,19 @@ section:last-of-type a{
   color: #12784A;
 }
 
+section:last-of-type a:hover{
+  opacity: .5;
+}
+
+section:last-of-type a:focus{
+  border: 1px solid blue; 
+  padding: 2px;
+}
+
+section:last-of-type a:active{
+  color:#A47E2D; 
+}
+
 section:last-of-type h2 {
  font-size: 1em; 
  text-align: center;
@@ -514,6 +603,7 @@ section:last-of-type h2 {
 footer {
   background-color: rgb(34,34,34);
   padding: 4em 1.5em 4em 1.5em;
+  
 }
 
 h5{
@@ -530,6 +620,20 @@ footer a{
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2.5em;
   font-size: 1em;
+  transition: .2s ease-in-out;
+}
+
+footer a:hover{
+  color:#12784A; 
+}
+
+footer a:focus{
+  border: 2px solid blue;
+  padding: 2px;  
+}
+
+footer a:active{
+  color:#A47E2D; 
 }
 
 footer div{
@@ -539,6 +643,7 @@ footer div{
 
 hr{
   margin: 0 0 1em 0; 
+ 
 }
 
 button{
@@ -558,6 +663,14 @@ button:hover{
   border: 1px solid rgb(34, 34, 34);
 }
 
+button:focus{
+  border: 2px solid blue;
+}
+
+button:active{
+  background-color: #A47E2D; 
+}
+
 
 
 
@@ -568,22 +681,36 @@ button:hover{
 /
 /
 /
-/
-/
-/
-/
-/
-/
-/
-*/ 
+*/
 
 
+figure a{
+ color: black;
+ font-family: Arial, Helvetica, sans-serif; 
+ transition: .2s ease-in-out;
+}
+
+figure a:hover{
+  color: #12784A;
+}
+
+figure a:focus{
+  border: 2px solid blue;
+  padding: 2px;
+}
+
+figure a:active{
+  color:#A47E2D;
+}
+
+
+/* Header foto. Bron: https://www.pexels.com/nl-nl/foto/wagens-weg-landschap-lichten-3136673/*/ 
 .world header{
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/elementen/header-foto-pagina2.jpeg);
-
  }
+
 
  /* Grid bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED116-DMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20grid.pdf*/ 
   /* bron: https://css-tricks.com/snippets/css/complete-guide-grid/*/ 
@@ -596,6 +723,8 @@ button:hover{
   align-content: center;
   row-gap: 2em;
   padding: 2em 1.5em 4em 1.5em;
+  max-width: 1500px;
+  margin: 0 auto; 
 }
 
 .world section:nth-of-type(2) img{
@@ -608,9 +737,7 @@ button:hover{
 
 .world section:nth-of-type(2) img:hover{
   border-bottom: 1em rgba(255, 255, 255, 0) solid; 
-  
-  }
-
+}
 
 .world section:nth-of-type(3){
   display: grid;
@@ -619,6 +746,8 @@ button:hover{
   grid-gap: 10px;
   row-gap: 2em;
   padding: 2em 1.5em 4em 1.5em;
+  max-width: 1500px;
+  margin: 0 auto; 
 }
 
 .world section:nth-of-type(3) figure:first-of-type{
@@ -635,18 +764,18 @@ border-bottom: rgba(255, 255, 255, 0) solid;
 }
 
 .world section:nth-of-type(3) img:hover{
-  border-bottom: 1em rgba(255, 255, 255, 0) solid; 
-  
+  border-bottom: 1em rgba(255, 255, 255, 0) solid;  
 }
 
 .world section:nth-of-type(4){
   display: grid;
   grid-template-columns: repeat(2 ,1fr);
   grid-template-rows: auto;
-  
   grid-gap: 10px;
   row-gap: 2em;
   padding: 2em 1.5em 4em 1.5em;
+  max-width: 1500px;
+  margin: 0 auto; 
 }
 
 .world section:nth-of-type(4) img{
@@ -659,7 +788,6 @@ border-bottom: rgba(255, 255, 255, 0) solid;
 
 .world section:nth-of-type(4) img:hover{
   border-bottom: 1em rgba(255, 255, 255, 0) solid; 
-  
 }
 
 .world section:nth-of-type(5){
@@ -670,7 +798,8 @@ border-bottom: rgba(255, 255, 255, 0) solid;
   grid-gap: 10px;
   row-gap: 2em;
   padding: 2em 1.5em 4em 1.5em;
-
+  max-width: 1500px;
+  margin: 0 auto; 
 }
 
 .world section:nth-of-type(5) img{
@@ -683,7 +812,6 @@ border-bottom: rgba(255, 255, 255, 0) solid;
 
 .world section:nth-of-type(5) img:hover{
 border-bottom: 1em rgba(255, 255, 255, 0) solid; 
-
 }
 
 .world section:nth-of-type(6){
@@ -694,7 +822,6 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
   background-size: cover;
   height: 17em;
   width: 100%;
-  
   }
 
   .world section:nth-of-type(6) a {
@@ -708,13 +835,22 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     transform:translate(-50%, -50%);
     width: 11em;
     text-align: center;
-    transition: .2s ease-out;
+    transition: .2s ease-in-out;
   }
 
   .world section:nth-of-type(6) a:hover{
     background-color: #12784A;
     border: none;
   }
+
+  .world section:nth-of-type(6) a:focus{
+    border: 2px solid blue;
+  }
+  
+  .world section:nth-of-type(6) a:active{
+    color: #A47E2D; 
+  }
+  
 
   .world section:nth-of-type(6) h2{
     position: absolute; 
@@ -726,25 +862,64 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     }
 
     
-
   /* @media om het responsive te maken bron: https://dlo.mijnhva.nl/content/enforced
   /192710-FDMCI-2000FDMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20media%20queries.pdf*/
   /* bron: https://www.youtube.com/watch?v=2KL-z9A56SQ&feature=youtu.be*/ 
   @media (min-width: 600px) {
-  .header-text{
-    width: 30em;
-   
+  
+    nav a{
+      font-size: 1.8em;
+    }
+    
+    .header-text{
+    width: 35em;
     }
     
     .header-text h1{
-      font-size: 2.5em;
-      
+      font-size: 2.7em; 
     }
     
     .header-text h3{
-     font-size: 1.2em;
-     
+     font-size: 1.3em;
     }
+
+    section:first-of-type h2 {
+      font-size: 1.9em;
+      }
+      
+    section:first-of-type p {
+        font-size: 1.2em;
+      }
+
+    
+    .home section:nth-of-type(3) figcaption p:first-of-type{
+      font-size: 1.3em;
+    }
+
+    .home section:nth-of-type(3) figcaption p:nth-of-type(2){
+      font-size: 1.2em;
+    }
+    
+    .home section:nth-of-type(3) figcaption p:last-of-type{
+      font-size: 1.1em;
+    }
+
+    .world figcaption p:first-of-type{
+      font-size: 1.4em;
+    }
+
+    .world figcaption p:last-of-type{
+      font-size: .8em;
+    }
+
+    h2{
+      font-size: 1.8em;
+    }
+
+    .world section:nth-of-type(6){
+      height: 20em;
+
+      }
 
     .home section:nth-of-type(2) img{
       width: 27em;
@@ -754,6 +929,17 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
       padding: 0 8em 0 8em;
     }
 
+    section:first-of-type {
+      padding: 4em 3.5em 4em 3.5em;
+    }
+
+    section:first-of-type h2{
+      font-size: 1.8em;
+    }
+
+    a {
+      font-size: 1.3em;
+    }
 }
 
 @media (min-width: 700px){
@@ -769,60 +955,22 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
 }
 
 
-@media (min-width: 800px) {
-  .header-text{
-    width: 40em;
-   
-    }
-    
-    .header-text h1{
-      font-size: 2.7em;
-      
-    }
-    
-    .header-text h3{
-     font-size: 1.3em;
-     
-    }
-
-    section:first-of-type {
-      padding: 4em 4em 4em 4em;
-    }
-
-    section:first-of-type h2{
-      font-size: 2em;
-    }
-
-    .home section:nth-of-type(2) img{
-      width: 21em;
-     }
-
-     section:last-of-type ul{
-      padding: 0 11em 0 11em;
-    }
-
-    .home section:nth-of-type(3) img{
-      height: 18em;
-    }
-
-    .home section:nth-of-type(3){
-      padding: 2em 3em 4em 3em;
-    }
-
-  
-}
-
-
 @media (min-width: 980px) {
     
+    nav a{
+      font-size: 1.3em;
+    }
+  
+    .header-text{
+      width: 50em;
+    }
+
     .header-text h1{
-      font-size: 3em;
-      
+      font-size: 3.5em;  
     }
     
     .header-text h3{
      font-size: 1.5em;
-     
     }
 
     section:first-of-type {
@@ -830,12 +978,29 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     }
 
     section:first-of-type h2{
-      font-size: 2em;
+      font-size: 2.2em;
     }
+      
+    section:first-of-type p {
+      font-size: 1.3em;
+      }
 
     a {
-      font-size: 1.1em;
+      font-size: 1.3em;
     }
+
+    h2{
+      font-size: 2.2em;
+    }
+
+    .world section:nth-of-type(6){
+      height: 22em;
+
+      }
+
+    .home section:nth-of-type(4){
+      height: 38em; 
+      }
 
     .home section:nth-of-type(2) img{
       width: 16em;
@@ -850,7 +1015,6 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     }
     
     .home section:nth-of-type(3){
-      
       padding: 2em 10em 4em 10em;
     }
 
@@ -877,7 +1041,6 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     }
     
     .world section:nth-of-type(5){
-      
       padding: 2em 10em 4em 10em;
     }
 
@@ -886,7 +1049,6 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     }
     
     .world section:nth-of-type(2){
-      
       padding: 2em 10em 4em 10em;
     }
 
@@ -896,18 +1058,64 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
         url(../images/elementen/store-locator.jpg);
       }
    
-      h4{
+    h4{
       padding: 2em 10em 1em 10em;
-    }
-
+      }
 }
 
 @media (min-width: 1100px) {
-
   section:last-of-type ul{
     padding: 0 22em 0 22em;
   }
 }
+
+@media (min-width: 1200px) {
+  nav a{
+    font-size: 1.5em;
+  }
+  
+  .header-text{
+    width: 60em;
+  }
+    
+  .header-text h1{
+  font-size: 4em; 
+    }
+    
+  .header-text h3{
+  font-size: 2em;
+  }
+  
+  section:first-of-type h2{
+    font-size: 2.5em;
+  }
+    
+  section:first-of-type p {
+    font-size: 1.5em;
+    }
+  
+    a {
+      font-size: 1.5em;
+    }
+
+    .world section:nth-of-type(6){
+      height: 24em;
+
+      }
+
+    .home section:nth-of-type(3) figcaption p:first-of-type{
+      font-size: 1.4em;
+    }
+
+    .home section:nth-of-type(3) figcaption p:nth-of-type(2){
+      font-size: 1.3em;
+    }
+    
+    .home section:nth-of-type(3) figcaption p:last-of-type{
+      font-size: 1.2em;
+    }
+   
+    }
 
 
 
@@ -916,6 +1124,9 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     display: none;
   }
 }
+
+
+
 
 
 
