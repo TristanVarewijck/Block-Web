@@ -14,27 +14,6 @@
  font-family: Helvetica, sans-serif;
 }
 
-.dark-mode{
-background: #191919;
-color: white; 
-}
-
-.dark-mode a {
-  color: white;
-}
-
-.dark-mode p{
-  color: white;
-}
-
-.dark-mode section:last-of-type{
-  background-color: #191919;
-}
-
-.dark-mode section:first-of-type{
-  background-color: #191919;
-}
-
 h4{
   padding: 4em 1.5em 0 1.5em;
   font-weight: 400;
@@ -174,6 +153,7 @@ height: 100vh;
 
 
 /* fixed position bron: https://www.w3schools.com/css/css_positioning.asp*/ 
+/* Element onderaan het uitschuifmenu */ 
 .fixed-menu-element{
   position: sticky; 
   bottom: 0; 
@@ -213,6 +193,8 @@ div:first-of-type  ul{
 }
 
 
+
+/* De ingebouwde scrollbar */ 
 /* Voor het stylen van de scrollbar bron: https://css-tricks.com/the-current-state-of-styling-scrollbars/ */ 
 div:first-of-type ul::-webkit-scrollbar {
   height: .3em 
@@ -326,6 +308,7 @@ section:first-of-type {
 }
 
 
+/* De heading van de tweede sectie */ 
 /* gradient text bron: https://cssgradient.io/blog/css-gradient-text/*/ 
 section:first-of-type h2 {
 font-family: 'goldman', cursive;
@@ -366,14 +349,14 @@ section:first-of-type p {
   color:#A47E2D; 
 }
 
-/* Watch finder */ 
+
+/* Section: Watch finder */ 
 .home section:first-of-type div a:first-of-type{
 margin-right: 1em;
 background-color: rgba(0, 0, 0, 0); 
 padding: .7em 2em .7em 2em;
 border-radius: 20px;
 border: solid 1px #12784A;
-transition-duration: 2s ease-out;
 }
 
 .home section:first-of-type div a:first-of-type:hover{
@@ -391,7 +374,7 @@ transition-duration: 2s ease-out;
 }
 
 
-/* view all */ 
+/* view all - Button */ 
 .home section:nth-of-type(2) a:first-of-type{
   display: inline;
   margin-left: 1px;
@@ -413,6 +396,8 @@ transition-duration: 2s ease-out;
   opacity: 1; 
 }
 
+
+/* De Rolex Slider */ 
 /* slider met Flexbox. Bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED1
 16-DMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20flexbox.pdf*/ 
 .home section:nth-of-type(2) ul{
@@ -468,7 +453,8 @@ font-size: .8em;
  border:none;
 }
 
-/* Artikelen */ 
+/* Galerij met Grid */ 
+/* Grid. Bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED116-DMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20grid.pdf.*/
 .home section:nth-of-type(3){
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -499,7 +485,7 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
 }
 
 
-/* official rolex retailers */ 
+/* Section: official rolex retailers */ 
 .home section:nth-of-type(4){
   position: relative; 
   background-image: linear-gradient(
@@ -513,7 +499,7 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
   width: 100%;
   }
 
-  /* Find a Boutique */ 
+  /* Button - Find a Boutique */ 
   .home section:nth-of-type(4) a {
     position: absolute;
     margin-top: 5em;
@@ -600,6 +586,9 @@ section:last-of-type h2 {
  font-weight: 400;
 }
 
+
+/* De footer */ 
+
 footer {
   background-color: rgb(34,34,34);
   padding: 4em 1.5em 4em 1.5em;
@@ -646,6 +635,30 @@ hr{
  
 }
 
+/* De "dark mode" button */
+/* De class voor dark-bode */  
+.dark-mode{
+  background: #191919;
+  color: white; 
+  }
+  
+  .dark-mode a {
+    color: white;
+  }
+  
+  .dark-mode p{
+    color: white;
+  }
+  
+  .dark-mode section:last-of-type{
+    background-color: #191919;
+  }
+  
+  .dark-mode section:first-of-type{
+    background-color: #191919;
+  }
+
+/* De dark mode button zelf */ 
 button{
   display: block;
   margin-top: 1em;
@@ -715,6 +728,9 @@ figure a:active{
  /* Grid bron: https://dlo.mijnhva.nl/content/enforced/192710-FDMCI-2000FED116-DMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20grid.pdf*/ 
   /* bron: https://css-tricks.com/snippets/css/complete-guide-grid/*/ 
   /* bron: https://www.youtube.com/watch?v=br-0i3U1VCA&feature=youtu.be */ 
+
+
+  /* Meerdere galerijen gemaakt met Grid */ 
   .world section:nth-of-type(2){
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -814,6 +830,9 @@ border-bottom: rgba(255, 255, 255, 0) solid;
 border-bottom: 1em rgba(255, 255, 255, 0) solid; 
 }
 
+
+/* Sectie met de rolex menneer */ 
+
 .world section:nth-of-type(6){
   position: relative; 
   background-image: linear-gradient(
@@ -865,6 +884,8 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
   /* @media om het responsive te maken bron: https://dlo.mijnhva.nl/content/enforced
   /192710-FDMCI-2000FDMCI-CMD-2021-1/FED%2020-21%20-%20Blok%202%20-%20Oefening%20media%20queries.pdf*/
   /* bron: https://www.youtube.com/watch?v=2KL-z9A56SQ&feature=youtu.be*/ 
+
+  /* media queries */ 
   @media (min-width: 600px) {
   
     nav a{
@@ -945,6 +966,9 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
       width: 16em;
      }
 }
+
+
+/* Veranderen van de achtergrond foto die wel past */ 
 
 @media (min-width: 700px){
   .home section:nth-of-type(4){
@@ -1118,8 +1142,6 @@ border-bottom: 1em rgba(255, 255, 255, 0) solid;
     }
    
     }
-
-
 
 @media (max-width: 1200px){
   .responsive-menu-items{
