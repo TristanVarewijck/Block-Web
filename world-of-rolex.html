@@ -19,7 +19,7 @@
         <div class="menu-hidden">
 
 			<p class="menu-sluiten"><a href="#"></a><ion-icon name="close-outline"></ion-icon></p>
-			<ul> <!-- in een <ul> en <li> geplaatst op later een slider te kunnen maken -->
+			<ul class="uitschuif-menu-slider"></ulclass>> <!-- in een <ul> en <li> geplaatst op later een slider te kunnen maken -->
 				<li>
 					<a href="#"> 
 						<!-- Slider -->
@@ -106,23 +106,25 @@
 		
 			<!-- Footer items in het uitschuifmenu-->
 			<nav class="navigatie-uitschuif-menu">
-			<p><a href="#">Rolex watches</a></p>
-			<p><a href="#">New watches 2020</a></p>
-			<p><a href="#">Configure your watch</a></p>
-			<p><a href="#">Watch finder</a></p>
-			<p><a href="#">Men's watches</a></p>
-			<p><a href="#">Womans's watches</a></p>
-			<p><a href="#">History & Watchmaking</a></p>
-			<hr>
-			<p><a href="world-of-rolex.html">World of Rolex</a></p>
-			<hr>
-			<p><a href="#">Find a retailer</a></p>
-			<p><a href="#">Watch car & service</a></p>
-			<p><a>Every Rolex Tells a story</a></p>
-			<hr>
-			<p><a href="#">About Rolex.org</a></p>
-			<hr>
-			</nav>
+				<ul>
+					<li><a href="#">Rolex watches</a></li>
+					<li><a href="#">New watches 2020</a></li>
+					<li><a href="#">Configure your watch</a></li>
+					<li><a href="#">Watch finder</a></li>
+					<li><a href="#">Men's watches</a></li>
+					<li><a href="#">Womans's watches</a></li>
+					<li><a href="#">History & Watchmaking</a></li>
+					<hr>
+					<li><a href="world-of-rolex.html">World of Rolex</a></li>
+					<hr>
+					<li><a href="#">Find a retailer</a></li>
+					<li><a href="#">Watch car & service</a></li>
+					<li><a href="#">Every Rolex Tells a story</a</li>>
+					<hr>
+					<li><a href="#">About Rolex.org</a></li>
+					<hr>
+					</ul>
+					</nav>
 
 			<div class="fixed-menu-element">
 			<p><a><ion-icon name="language"></ion-icon>Languages</a></p>
@@ -132,7 +134,7 @@
 
 		<!-- De Header icons -->
 		
-		<nav>
+		<nav class="header-nav">
 		  <ul>	
 			<li><a class="hamburger" role="button" href="#"><ion-icon name="menu"></ion-icon></a></li>
 		 	<li><a class="home" href="index.html"><ion-icon name="home"></ion-icon></a></li>
@@ -150,7 +152,7 @@
 
         <div class="header-text">
 			<h1>WORLD OF ROLEX</h1>
-			<h3>SPORTS, ARTS AND EXPLORATION</h3>
+			<h2>SPORTS, ARTS AND EXPLORATION</h2>
 		</div>
 		
 	</header>
@@ -167,8 +169,10 @@
 		</section>
 
        
-        <h4>Rolex and Sponsorship</h4>
+        
         <section>
+			<h2>Rolex and Sponsorship</h2>
+			<div>
 			   <figure>
                 <img src="images/pagina-2-elementen/foto-breed-tennis.jpg" alt="Rolex and Partners Article">
                 <figcaption>
@@ -176,14 +180,16 @@
                 <p><a href="#">Discover more</a></p>
                 </figcaption>
 			 </figure>
+			 <div>
 			
         </section>
 
 
 		<!-- Gebruik maken van grid om meerdere galerijen te maken -->
 
-        <h4>Rolex and Sports</h4>
-        <section> 
+        
+        <section>
+			<h2>Rolex and Sports</h2> 
             <figure>
                 <img src="images/pagina-2-elementen/foto-breed-baan.jpg" alt="Rolex and Tenis Article">
                 <figcaption>
@@ -226,9 +232,11 @@
         </section>
         
        
-        <h4>Arts and Culture</h4>
+        
         <section>
-            <figure>
+			<h2>Arts and Culture</h2>
+			<div>
+			<figure>
                 <img src="images/pagina-2-elementen/small-people-2.jpg" alt="Rolex and Cinema Article">
                 <figcaption>
                 <p>ROLEX AND CINEMA</p>
@@ -258,12 +266,14 @@
                     <p>ROLEX MENTROS & PROTEGES</p>
                     <p><a href="#">Discover more</a></p>
                     </figcaption>
-            </figure>
+			</figure>
+			</div>
         </section>
         
         
-        <h4>Science and Exploration</h4>
+    
         <section>
+			<h2>Science and Exploration</h2>
             <figure>
                 <img src="images/pagina-2-elementen/foto-breed-sneeuw-2.jpg" alt="Rolex and Exploration Article">
                 <figcaption>
@@ -321,19 +331,22 @@
 		
 
 		
-		<h5>Dark mode</h5>
+		<h2>Dark mode</h2>
 		<button>On/Off</button>
 		
-		<h5>ROLEX WATCHES</h5>
+		<h2>ROLEX WATCHES</h2>
 		<hr>
-		<p><a href="#">Rolex watches</a></p>
-		<p><a href="#">New watches 2020</a></p>
-		<p><a href="#">Configure your watch</a></p>
-		<p><a href="#">Watch finder</a></p>
-		<p><a href="#">Men's watches</a></p>
-		<p><a href="#">Womans's watches</a></p>
-		<p><a href="#">History & Watchmaking</a></p>
-		<p><a href="#">Every Rolex Tells a story</a></p>
+		<ul>
+			<li><a href="#">Rolex watches</a></li>
+			<li><a href="#">New watches 2020</a></li>
+			<li><a href="#">Configure your watch</a></li>
+			<li><a href="#">Watch finder</a></li>
+			<li><a href="world-of-rolex.html">World of Rolex</a></li>
+			<li><a href="#">Men's watches</a></li>
+			<li><a href="#">Womans's watches</a>
+			<li><a href="#">History & Watchmaking</a></li>
+			<li><a href="#">Every Rolex Tells a story</a></li>
+		</ul>
 
 	</footer>
 	
